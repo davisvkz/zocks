@@ -1,0 +1,5 @@
+**/node_modules
+.turbo
+public/.react-router
+public/tsconfig.tsbuildinfo
+src/tsconfig.tsbuildinfo

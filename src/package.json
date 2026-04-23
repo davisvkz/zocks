@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "src",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"dev": "dotenv -e ../.env -- tsx ./main.ts",
+		"clean": "rm -rf .turbo node_modules",
+		"format": "prettier --write ../ --ignore-path ../.gitignore",
+		"typecheck": "tsc --noEmit --project ./tsconfig.json",
+		"lint": "eslint . --ext .ts,.mts --ignore-path ../.gitignore",
+		"test": "vitest run --config ../tooling/vitest-config/node.mts"
+	},
+	"eslintConfig": {
+		"root": true,
+		"extends": [
+			"@tooling/eslint-config/typescript"
+		]
+	},
+	"prettier": "@tooling/prettier-config",
+	"devDependencies": {
+		"@tooling/eslint-config": "workspace:^",
+		"@tooling/prettier-config": "workspace:^",
+		"@types/bcrypt": "^6.0.0",
+		"@types/node": "^22.10.2",
+		"eslint": "^8.38.0",
+		"prettier": "^3.2.5",
+		"ts-node": "^10.9.2",
+		"tsconfig-paths": "^4.2.0",
+		"tsx": "^4.21.0",
+		"typescript": "^5.3.3",
+		"vitest": "^4.0.15"
+	},
+	"dependencies": {
+		"@amiceli/vitest-cucumber": "^6.1.0",
+		"@hono/node-server": "^1.19.6",
+		"@modules/shared": "workspace:^",
+		"@types/express": "^5.0.6",
+		"dotenv-cli": "^11.0.0",
+		"express": "^5.2.1",
+		"hono": "^4.10.7",
+		"reflect-metadata": "^0.2.2",
+		"tsyringe": "^4.10.0",
+		"uuid": "^13.0.0",
+		"zod": "^4.1.13"
+	}
+}

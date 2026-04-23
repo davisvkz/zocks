@@ -1,0 +1,9 @@
+{
+	"name": "@implementations/ioredis",
+	"dependencies": {
+		"ioredis": "^5.8.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.2"
+	}
+}

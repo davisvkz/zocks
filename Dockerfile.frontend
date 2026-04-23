@@ -1,0 +1,24 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install pnpm globally
+RUN npm install -g pnpm
+
+# Copy package.json and pnpm-workspace.yaml first for better layer caching
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+
+# Copy tooling configs
+COPY tooling/ ./tooling/
+
+# Install dependencies using store mount for caching
+RUN pnpm install --frozen-lockfile
+
+# Copy public folder (frontend)
+COPY public/ ./public/
+
+# Expose Vite dev server port
+EXPOSE 5173
+
+# Start the frontend development server
+CMD ["pnpm", "dev", "--filter", "./public"]

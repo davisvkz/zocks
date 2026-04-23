@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "@modules/users",
+	"exports": {
+		"./module": "./module.ts",
+		"./public": "./public.ts"
+	},
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"hono": "^4.10.7",
+		"jsonwebtoken": "^9.0.2",
+		"reflect-metadata": "^0.2.2",
+		"tsyringe": "^4.10.0",
+		"uuid": "^13.0.0",
+		"zod": "^4.1.13"
+	},
+	"devDependencies": {
+		"@types/bcrypt": "^6.0.0",
+		"@types/jsonwebtoken": "^9.0.6",
+		"@types/node": "^22.10.2",
+		"tsx": "^4.21.0"
+	}
+}

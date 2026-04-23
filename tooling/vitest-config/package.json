@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@tooling/vitest-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./node": "./node.mts"
+  },
+  "devDependencies": {
+    "@amiceli/vitest-cucumber": "^6.1.0",
+    "vitest": "^4.0.15",
+    "vite-tsconfig-paths": "^5.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "build", "dist", ".next", ".expo"],
+  "compilerOptions": {
+    "baseUrl": "../../src",
+    "lib": ["ES2022", "ESNext", "DOM"],
+    "incremental": true,
+    "skipLibCheck": true,
+    "types": ["node", "vitest/globals"]
+  }
+}

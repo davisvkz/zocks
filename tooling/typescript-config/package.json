@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@tooling/typescript-config",
+  "private": true,
+  "type": "module",
+  "files": [
+    "base.json",
+    "node.json",
+    "react.json"
+  ],
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "eslint": "8.38.0"
+  }
+}

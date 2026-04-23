@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "app",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.14.2",
+    "@mantine/hooks": "^7.14.2",
+    "@react-router/node": "^7.13.0",
+    "isbot": "^5",
+    "lucide-react": "^0.563.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^7.1.1"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.1.1",
+    "@react-router/fs-routes": "^7.1.1",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^22.10.10",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

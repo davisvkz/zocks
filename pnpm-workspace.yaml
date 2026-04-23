@@ -1,0 +1,4 @@
+packages:
+  - "public/**"
+  - "src/**"
+  - "tooling/*"
